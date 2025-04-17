@@ -1,3 +1,9 @@
+document.getElementById('mobileMenuButton').addEventListener('click', function() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('hidden');
+});
+
+
 const counters = document.querySelectorAll(".counter");
         let started = false;
       
