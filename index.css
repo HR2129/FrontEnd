@@ -1,0 +1,130 @@
+body a{
+            text-decoration: none;
+        }
+       .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background: #fff; /* Optional: background color */
+  padding: 20px 0;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+
+.carousel-slide img {
+  width: 150px; /* Adjust logo size */
+  height: auto;
+  margin: 0 25px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Keyframe for smooth scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slide img {
+    width: 100px;
+    margin: 0 15px;
+  }
+}
+
+
+
+        /* patients review */
+        h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            width: 200%; /* Enough space for scrolling */
+            animation: scroll 10s linear infinite;
+        }
+
+        .testimonial-card {
+            /* background: #fff; */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-width: 300px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .rating {
+            color: gold;
+            font-size: 18px;
+        }
+
+        .arrows {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .arrow {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-30%);
+            }
+        }
+
+
+        /* counter number css */
+        .counter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #406060;
+}
+
+.counting-section p {
+  font-size: 1.1rem;
+  color: #5e7a7a;
+}
